@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms(Student Information)</title>
+</head>
+<body>
+    <!-- <form action="http://localhost:8888/html_structure.html" method="get"> -->
+    <form action="/html_structure.html" method="get">
+    <fieldset>
+        <legend> Engineering courses</legend>
+        <p>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." autocomplete="on"  autofocus>
+        </p>
+        <p>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." autocomplete="on">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password" >
+        </p>
+        <p>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="on" >
+        </p>
+        <!-- know the difference between tel and number-->
+        <p>
+            <label for="year">Batch</label>
+            <input type="number" id="year" name="year" placeholder="enter year" min="2011" max="2031" step="4" value="2008" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="Engineering">Enggineering Branch</label>
+            <select id="Engineering" name="Engineering">
+                <optgroup label="core">
+                    <option value="cse">CSE</option>
+                    <option value="ds" selected>DS</option>
+                    <option value="it">IT</option>
+                </optgroup>
+                <optgroup label="Special">
+                    <option value="aiml">AIML</option>
+                    <option value="ai" >AI</option>
+                    <option value="cyber">Cyber</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="subject">Details</label>
+            <br>
+            <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset> 
+        <legend> Various Techs</legend>
+        <p>
+            <input type="radio" name="softwareDev" id="wt" value="WT">
+            <label for="wt"> Web Tech</label>
+        </p>
+        <p>
+            <input type = "radio" name = "softwareDev" id = "java" value = "java">
+            <label for="java"> Dev</label>
+        </p>
+        <p>
+            <input type = "radio" name = "softwareDev" id = "database" value = "database">
+            <label for = "database"> Database Tech</label>
+        </p>
+        <input type = "submit" value = "Submit">
+    </fieldset>
+</body>
+</html>
+
+
+
+<!-- 'for' and 'id' are always supposed to be same-->
